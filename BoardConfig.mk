@@ -13,7 +13,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-DEVICE_PATH := device/huawei/kiwi
+DEVICE_PATH := device/xiaomi/ido
 
 TARGET_SPECIFIC_HEADER_PATH := $(DEVICE_PATH)/include
 
@@ -37,7 +37,6 @@ TARGET_BOARD_PLATFORM := msm8916
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := MSM8916
 TARGET_NO_BOOTLOADER := true
-TARGET_OTA_ASSERT_DEVICE := kiwi
 
 # Kernel
 BOARD_KERNEL_BASE := 0x80000000
@@ -52,13 +51,12 @@ TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-android-
 TARGET_KERNEL_HEADER_ARCH := arm64
 TARGET_USES_UNCOMPRESSED_KERNEL := true
-TARGET_KERNEL_CONFIG := cyanogenmod_kiwi-64_defconfig
+TARGET_KERNEL_CONFIG := 
 
 # Audio
 AUDIO_FEATURE_ENABLED_KPI_OPTIMIZE := true
 AUDIO_FEATURE_LOW_LATENCY_PRIMARY := true
 BOARD_USES_ALSA_AUDIO := true
-COMMON_GLOBAL_CFLAGS += -DHUAWEI_SOUND_PARAM_PATH=\"/system/etc/sound_param/kiw_l/\"
 
 # Bluetooth
 BOARD_HAVE_BLUETOOTH := true
@@ -71,9 +69,6 @@ TARGET_BOOTANIMATION_PRELOAD := true
 TARGET_BOOTANIMATION_TEXTURE_CACHE := true
 
 # Camera
-BOARD_CAMERA_SENSORS := imx135_cp8675 imx214_cp8675 ov5648_cp8675
-COMMON_GLOBAL_CFLAGS += -DCAMERA_VENDOR_L_COMPAT
-TARGET_USE_VENDOR_CAMERA_EXT := true
 USE_DEVICE_SPECIFIC_CAMERA := true
 
 # Charger
@@ -123,8 +118,6 @@ BOARD_FLASH_BLOCK_SIZE := 131072 # blockdev --getbsz /dev/block/mmcblk0p19
 
 # Power
 TARGET_POWERHAL_VARIANT := qcom
-BOARD_POWER_CUSTOM_BOARD_LIB := libpower_kiwi
-TARGET_TAP_TO_WAKE_NODE := /sys/touch_screen/easy_wakeup_gesture
 
 # Properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
@@ -147,8 +140,6 @@ TARGET_RECOVERY_UPDATER_LIBS := librecovery_updater_kiwi
 TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)/releasetools
 
 # RIL
-COMMON_GLOBAL_CFLAGS += -DDISABLE_ASHMEM_TRACKING
-BOARD_RIL_CLASS := ../../../device/huawei/kiwi/ril
 PROTOBUF_SUPPORTED := true
 TARGET_RIL_VARIANT := proprietary
 
@@ -157,8 +148,8 @@ include device/qcom/sepolicy/sepolicy.mk
 
 # Vendor Init
 TARGET_UNIFIED_DEVICE := true
-TARGET_INIT_VENDOR_LIB := libinit_kiwi
-TARGET_LIBINIT_DEFINES_FILE := $(DEVICE_PATH)/init/init_kiwi.c
+TARGET_INIT_VENDOR_LIB := 
+TARGET_LIBINIT_DEFINES_FILE := 
 
 # Vold
 TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/platform/msm_hsusb/gadget/lun%d/file
@@ -178,4 +169,4 @@ TARGET_USES_QCOM_WCNSS_QMI := true
 TARGET_USES_WCNSS_CTRL := true
 
 # inherit from the proprietary version
--include vendor/huawei/kiwi/BoardConfigVendor.mk
+-include vendor/xiaomi/ido/BoardConfigVendor.mk

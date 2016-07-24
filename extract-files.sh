@@ -1,8 +1,8 @@
 #!/bin/bash
 
 #set -e
-export DEVICE=kiwi
-export VENDOR=huawei
+export DEVICE=ido
+export VENDOR=xiaomi
 
 if [ $# -eq 0 ]; then
   SRC=adb
