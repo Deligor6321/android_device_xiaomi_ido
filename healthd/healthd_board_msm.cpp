@@ -22,7 +22,8 @@
 
 #include <healthd.h>
 
-#define BACKLIGHT_PATH            "/sys/class/leds/lcd-backlight/brightness"
+#define BACKLIGHT_PATH         "/sys/class/leds/lcd-backlight/brightness"
+#define CHARGING_ENABLED_PATH  "/sys/class/power_supply/battery/charging_enabled"
 
 #define LOGE(x...) do { KLOG_ERROR("charger", x); } while (0)
 #define LOGW(x...) do { KLOG_WARNING("charger", x); } while (0)
