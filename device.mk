@@ -153,11 +153,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/goodix.kl:system/usr/keylayout/goodix.kl \
     $(LOCAL_PATH)/keylayout/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl
 
-# Keyhandler
-PRODUCT_PACKAGES += \
-    CMActions \
-    com.cyanogenmod.keyhandler
-
 # Lights
 PRODUCT_PACKAGES += \
     lights.msm8916
@@ -201,10 +196,6 @@ PRODUCT_PACKAGES += \
     init.target-from-init.rc \
     init.target.rc \
     ueventd.qcom.rc
-
-# Recovery
-PRODUCT_PACKAGES += \
-    librecovery_updater_kiwi
 
 # RIL
 PRODUCT_PACKAGES += \
