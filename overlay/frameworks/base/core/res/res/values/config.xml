@@ -79,13 +79,14 @@
 
          Must be overridden in platform specific overlays -->
     <integer-array name="config_autoBrightnessLevels">
-        <item>10</item>
-        <item>30</item>
-        <item>60</item>
+        <item>5</item>
+        <item>35</item>
         <item>100</item>
-        <item>150</item>
-        <item>210</item>
-        <item>255</item>
+        <item>300</item>
+        <item>1500</item>
+        <item>3500</item>
+        <item>5000</item>
+        <item>7000</item>
     </integer-array>
 
     <!-- Array of output values for LCD backlight corresponding to the LUX values
@@ -110,7 +111,7 @@
 
     <!-- Minimum screen brightness setting allowed by the power manager.
          The user is forbidden from setting the brightness below this level. -->
-    <integer name="config_screenBrightnessSettingMinimum">4</integer>
+    <integer name="config_screenBrightnessSettingMinimum">2</integer>
 
     <!-- Hardware 'face' keys present on the device, stored as a bit field.
          This integer should equal the sum of the corresponding value for each
@@ -185,7 +186,7 @@
    -->
     <string-array translatable="false" name="config_mobile_tcp_buffers">
         <item>lte:2097152,4194304,8388608,262144,524288,1048576</item>
-        <item>umts:4094,87380,110208,4096,16384,110208</item>
+        <item>umts:4094,87380,1220608,4096,16384,1220608</item>
         <item>hspa:4094,87380,1220608,4096,16384,1220608</item>
         <item>hsupa:4094,87380,1220608,4096,16384,1220608</item>
         <item>hsdpa:4094,87380,1220608,4096,16384,1220608</item>
