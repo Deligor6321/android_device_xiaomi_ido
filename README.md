@@ -29,16 +29,17 @@ Multitouch   	 | Yes
 ###Platform
 Basic          | Specification
 -------------- | ---------------
-OS 	           | Android 5.1.1 (Lollipop) with MIUI 7.5
+OS 	           | Android 5.1.1 (Lollipop) with MIUI 7/8
 Chipset 	     | Qualcomm MSM8939v2 Snapdragon 616
-CPU 	         | Quad-core 1.5 GHz Cortex-A53 & quad-core 1.2 GHz Cortex-A53
+CPU 	         | Quad-core 1.5 GHz Cortex-A53 & quad-core 1.2 GHz Cortex-A53 (x64)
 GPU 	         | Adreno 405
 
 ###Memory
 Basic          | Specification
 -------------- | ---------------
-Card slot 	   | microSD, up to 256 GB (uses SIM 2 slot)
-Internal 	     | 16 GB, 2 GB RAM
+Card slot 	   | microSD, up to 128 GB (uses SIM 2 slot)
+Internal 	     | 16 GB
+RAM            | 2 GB LPDDR3
 
 ###Camera
 Basic          | Specification
